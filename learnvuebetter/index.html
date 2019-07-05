@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.jsdeliver.net/npm/vue/dist/vue.js"></script>
     <title></title>
 </head>
 <body>
-
-    <div id="app">
-        {{ message }}
+    <div id="shopping-list">
+        {{ header }}
+        <input v-model="header">
     </div>
    
+    <script src="https://unpkg.com/vue"></script>
     <script>
-        var app = new Vue({ 
-            el: '#app', 
+        app = new Vue({ 
+            el: '#shopping-list', 
             data: {
-                message: 'Howdy'
+                header: 'Vue is ready to party!'
             }
         })
     </script>
